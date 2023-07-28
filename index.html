@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pokédex</title>
+    <link rel="stylesheet" href="style.css">  <!-- Enlace al archivo de estilos externo -->
+</head>
+
+<body>
+
+        <div class="search-container">
+          <label for="search">Ingresa el nombre del Pokémon:</label>
+          <input type="text" id="search" placeholder="pikachu"> 
+          <button>Buscar</button> <!-- Botón para buscar -->
+          <button id="reset-button">Borrar</button><!-- Botón para borrar/resetear -->
+        </div>
+
+        <div id="autocomplete-list" class="autocomplete-list"></div> <!-- Lista de autocompletado -->
+        <h2>Sprites:</h2> <!-- Encabezado para los sprites -->
+        <div class="pokedex-container" id="pokedex"></div> <!-- Contenedor de los sprites -->
+
+    <table class="table"><!-- Tabla para mostrar información -->
+        <tbody>
+            <tr>
+                <th scope="row">Peso:</th>
+                <td id="weight"></td> <!-- Celda para el peso -->
+            </tr>
+            <tr>
+                <th scope="row">Tipo:</th>
+                <td id="type"></td> <!-- Celda para el tipo -->
+            </tr>
+            <tr>
+                <th scope="row">Movimientos:</th>
+                <td id="moves"></td><!-- Celda para los movimientos -->
+            </tr>
+        </tbody>
+    </table>
+      
+    <script src="main.js"></script> <!-- Enlace al archivo de script principal -->
+    <script src="autocomplete.js"></script><!-- Enlace al archivo de autocompletado -->
+
+</body>
+</html>
